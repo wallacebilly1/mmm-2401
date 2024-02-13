@@ -15,9 +15,12 @@ Rails 7.1.2
 
 We will be querying the FoodData Central API with an ingredient to retrieve a list of the ten most relevant foods that include that ingredient.
 
-First, sign up for an api key here: https://fdc.nal.usda.gov/api-key-signup.html
+## Assessment Instructions
+
+First, sign up for an API key here: https://fdc.nal.usda.gov/api-key-signup.html
 
 The documentation for the API can be found here: https://fdc.nal.usda.gov/api-guide.html
 
-Make sure you take the time to read the documentation carefully. Remember, we want to get a list of foods that contain an ingredient.
+Familiarize yourself with the API - set up some sample requests in Postman, and you may want to set up your API Key Credentials in this repository, install any gems you'll use, etc. 
 
+When the mid-mod assessment starts, your instructors will send you a user story. It will be your job to complete that user story within the 2-hr timeframe. Therefore, make sure you take the time to read the API documentation carefully. 
