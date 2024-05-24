@@ -1,4 +1,5 @@
 class FoodFacade
+  attr_reader :ingredient
   def initialize(ingredient = '')
     @ingredient = ingredient
   end
@@ -8,9 +9,10 @@ class FoodFacade
 
     json = service.foods_with_ingr(@ingredient)
 
-    @foods = json[:data].map do |food_data|
+    @foods = json[:foods].map do |food_data|
       Food.new(food_data)
     end
+    @foods[0..9]
   end
 
   def count
@@ -18,6 +20,6 @@ class FoodFacade
 
     json = service.foods_with_ingr(@ingredient)
 
-    json[:total]
+    json[:totalHits]
   end
 end

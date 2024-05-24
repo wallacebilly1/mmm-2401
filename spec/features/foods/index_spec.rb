@@ -28,7 +28,14 @@ RSpec.describe 'Foods Index Page', type: :feature do
         expect(page).to have_content("GTIN/UPC: 832298010009")
         expect(page).to have_content("Description: SWEET POTATOES")
         expect(page).to have_content("Brand Owner: NOT A BRANDED ITEM")
-        expect(page).to have_content("Ingredients: ")
+        expect(page).to have_content("Ingredients:")
+      end
+
+      within ("#food-2430122") do
+        expect(page).to have_content("GTIN/UPC: 070560951975")
+        expect(page).to have_content("Description: SWEET POTATOES")
+        expect(page).to have_content("Brand Owner: The Pictsweet Company")
+        expect(page).to have_content("Ingredients: SWEET POTATOES.")
       end
     end
   end
