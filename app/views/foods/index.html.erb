@@ -1,0 +1,16 @@
+<h1> Foods with <%= @facade.ingredient %> </h1>
+
+<h4> Results: <%= @facade.count %> </h4>
+
+<section id="foods">
+  <% @facade.foods.each do |food|%>
+    <div id="food-<%= food.id %>">
+      <ul>
+      <li> <b> GTIN/UPC: </b> <%= food.gtinupc %> </li>
+      <li> <b> Description: </b> <%= food.description %> </li>
+      <li> <b> Brand Owner: </b> <%= food.brand_owner %> </li>
+      <li> <b> Ingredients: </b> <%= food.ingredients %> </li>
+      </ul>
+    </div>
+  <% end %>
+</section>
